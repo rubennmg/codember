@@ -1,0 +1,4 @@
+1. Leer fichero palabra por palabra
+2. Almacenar las palabras en una lista (sólo una vez cada una, almacenándolas en minúsculas)
+3. Releer el fichero e ir contando cuantas veces aparece cada una
+4. Mostrar por consola el string resultado

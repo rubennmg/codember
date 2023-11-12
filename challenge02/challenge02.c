@@ -26,7 +26,12 @@ int main(int argc, char* argv[])
 
     while (1)
     {
-        printf("%c", c);
+        c = fgetc(file);
+        if (c == EOF)
+        {
+            break;
+        }
+        
         switch (c)
         {
             case '#':
@@ -38,7 +43,7 @@ int main(int argc, char* argv[])
             case '*':
                 i *= i;
                 break;
-            case '$':
+            case '&':
                 {
                     char temp[sizeof(int)];
                     snprintf(temp, sizeof(temp), "%d", i);
@@ -55,10 +60,11 @@ int main(int argc, char* argv[])
                 }
                 break;
         }
+        
     }
 
     fclose(file);
-    printf("%s\n", result);
+    printf("Result: %s\n", result);
     free(result);
 
     return 0;

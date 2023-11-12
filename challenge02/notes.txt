@@ -1,0 +1,4 @@
+"#" Incrementa el valor numérico en 1.
+"@" Decrementa el valor numérico en 1.
+"*" Multiplica el valor numérico por sí mismo.
+"&" Imprime el valor numérico actual.

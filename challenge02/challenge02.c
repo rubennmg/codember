@@ -31,7 +31,6 @@ int main(int argc, char* argv[])
         {
             break;
         }
-        
         switch (c)
         {
             case '#':
@@ -59,8 +58,7 @@ int main(int argc, char* argv[])
                     strncat(result, temp, sizeof(int));
                 }
                 break;
-        }
-        
+        }      
     }
 
     fclose(file);
